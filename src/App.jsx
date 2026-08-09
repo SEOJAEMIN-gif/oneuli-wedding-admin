@@ -402,16 +402,17 @@ function Style() {
     .cnt-tag{font-style:normal; font-size:11px; font-weight:700; color:var(--rose-deep); background:var(--blush); padding:2px 8px; border-radius:100px; margin-left:7px}
 
     .inq-list{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px}
-    .inq-card{position:relative; border:1px solid var(--line); border-radius:16px; padding:18px 20px; background:#fff}
-    .inq-card-head{display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; padding-bottom:12px; border-bottom:1px solid var(--line)}
+    .inq-card{position:relative; border:1px solid var(--line); border-radius:16px; padding:18px 20px; background:#fff; display:flex; flex-direction:column}
+    .inq-card-head{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:14px; padding-bottom:12px; border-bottom:1px solid var(--line)}
+    .inq-who{min-width:0; display:flex; align-items:baseline; flex-wrap:wrap; gap:2px}
     .inq-who b{font-family:'Hahmlet',serif; font-size:17px}
     .inq-phone{color:var(--rose-deep); font-size:13px; font-weight:600; margin-left:10px; text-decoration:none}
-    .inq-date{font-size:12px; color:var(--ink3)}
+    .inq-date{font-size:12px; color:var(--ink3); flex-shrink:0; white-space:nowrap}
     .inq-fields{display:grid; grid-template-columns:1fr 1fr; gap:10px 14px}
     .inq-fields span{display:flex; flex-direction:column; gap:3px; font-size:14px; color:var(--ink)}
     .inq-fields em{font-style:normal; font-size:11px; font-weight:700; color:var(--ink3)}
     .inq-msg2{margin-top:12px; padding-top:12px; border-top:1px solid var(--line); font-size:13.5px; color:var(--ink2); line-height:1.6}
-    .inq-del{position:absolute; top:16px; right:16px; border:1px solid var(--line); background:#fff; color:var(--ink2); border-radius:100px; padding:5px 12px; font-size:12px; cursor:pointer}
+    .inq-del{align-self:flex-end; margin-top:14px; border:1px solid var(--line); background:#fff; color:var(--ink2); border-radius:100px; padding:6px 14px; font-size:12px; cursor:pointer}
     .inq-del:hover{border-color:var(--rose); color:var(--rose-deep)}
 
     .slot-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:26px}
